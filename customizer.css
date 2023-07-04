@@ -72,7 +72,7 @@ header{
     font-weight: bold;
     font-size: 3em;
 }
-#car{       /*Style Logo fürs Logo*/
+.car{       /*Style Logo fürs Logo*/
     font-size: 44px;
     color:#fff;
     font-size: 44px;
@@ -232,6 +232,8 @@ header{
 
 .down-arrow{
     margin-left:40%;
+    width:70px;
+    height:90px;
     animation: blink 1s infinite;
 }
 .main{
@@ -384,7 +386,9 @@ header{
 #auto1, #auto2, #auto3{
     display: none;
 }
-
+.ti1{
+    text-align: center;
+}
 .hidden {
     display: grid;
 
@@ -426,6 +430,7 @@ header{
     color: #1d4486;
 }
 .it{
+    text-align: center;
     font-size: 20px;
 }
 /* Anfang Style für den Footer*/
@@ -451,6 +456,10 @@ footer{
 /*Style für den Teil Service*/
 .tit{ 
     margin-bottom: 10%;
+}
+.lo img{
+    height:25px;
+    width:25px;
 }
 .fooo{
     padding-bottom: 0%;
@@ -512,7 +521,7 @@ i{
 #add{
     margin-top: 0%;
 }
-#icon{
+.icon{
     color: #fff;
 }
 
@@ -575,7 +584,7 @@ i{
         color: white;
         font-size: 3em;
     }
-    #car{
+    .car{
         font-size: 4rem;
     }
     hr{
