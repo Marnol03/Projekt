@@ -76,7 +76,7 @@ header{   /*Style für den Header*/
 .open .navi a:hover{
     background-color:#c03b79;
 }
-#car{       /*Style Logo fürs Logo*/
+.car{       /*Style Logo fürs Logo*/
     font-size: 44px;
     color:#fff;
     font-size: 44px;
@@ -192,8 +192,12 @@ i{
 #add{
     margin-top: 0%;
 }
-#icon{
+.icon{
     color: #fff;
+}
+.lo img{
+    height: 25px;
+    width: 25px;
 }
 
 /*Responsive Style*/
@@ -233,7 +237,7 @@ i{
         border-radius: 6px;
         padding: 10px 20px;
     }
-    #car{
+    .car{
         font-size: 4rem;
     }
     .name{
@@ -320,4 +324,5 @@ i{
         margin-left: 9%;
 
     }
+    
 }

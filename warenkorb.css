@@ -74,7 +74,7 @@ header{   /*Style für den Header*/
 .open .navi a:hover{
   background-color:#c03b79;
 }
-#car{       /*Style Logo fürs Logo*/
+.car{       /*Style Logo fürs Logo*/
   font-size: 44px;
   color:#fff;
   font-size: 44px;
@@ -102,7 +102,9 @@ header{   /*Style für den Header*/
     bottom: 0px;
     height: 25px;
     border-radius: 6px;
+    text-align: center;
 }
+
 #panier{
     height: 150px;
     width: 150px;
@@ -180,11 +182,8 @@ header{   /*Style für den Header*/
   padding: 10px 5px;
   overflow:scroll;
 }
-h2{
-  text-align: center;
-}
 .bezahl{
-  font-size: 70%;
+  font-size: 3rem;
   color: #000000;
 }
 
@@ -307,7 +306,6 @@ right: 20px;
   margin-left: 20px;
 }
 .payment-btn{
-
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -328,8 +326,8 @@ right: 20px;
 }
 
 .payment-btn:hover {
-  color: violet;
-  background-color: rgb(247, 119, 141);
+  color: white;
+  background:linear-gradient(170deg, gray, violet);
   padding-left: 1.5rem;
 }
 
@@ -386,6 +384,11 @@ right: 20px;
 }
 .bezahlenfenster h1{
   margin-top: 0%;
+}
+.bezah{
+  text-align: center;
+  color: #b51fb8;
+  font-size: 3rem;
 }
 
 /* Anfang Style für den Footer*/
@@ -472,10 +475,13 @@ i{
 #add{
   margin-top: 0%;
 }
-#icon{
+.icon{
   color: #fff;
 }
-
+.lo img{
+  height: 25px;
+  width: 25px;
+}
 
 @media screen and (min-width:667px){
   .toggle{
@@ -514,7 +520,7 @@ i{
     border-radius: 6px;
     padding: 10px 20px;
 }
-#car{
+.car{
     font-size: 3rem;
 }
 .name{

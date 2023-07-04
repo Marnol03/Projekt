@@ -76,7 +76,7 @@ header{   /*Style für den Header*/
 .open .navi a:hover{
     background-color:#c03b79;
 }
-#car{       /*Style Logo fürs Logo*/
+.car{       /*Style Logo fürs Logo*/
     font-size: 44px;
     color:#fff;
     font-size: 44px;
@@ -101,15 +101,18 @@ h1{
     border: 0.5px solid black;
     margin:20px;
     align-items: center;
-    height: 60%;
+    height: auto;
     font-size: 15px;
     border-radius: 6px;
+    border: 1.5px solid black;
 }
 textarea{
     outline:none;
     resize:none;
     width:95%;
     height: 200px;
+    margin-left: 14px;
+    border: 1.5px solid black;
 }
 .boite{
     display: flex;
@@ -120,7 +123,9 @@ textarea{
     display: grid;
     grid-gap: 10px;
     justify-content: space-between;
-    
+}
+.boit{
+    margin-left: 20px;
 }
 .bt{
     background-color: white;
@@ -130,10 +135,6 @@ textarea{
 input{
     outline:none;
 }
-.tc{
-    position:fixed;
-}
-
 .schicken{
     border:none;
     color: white;
@@ -147,6 +148,10 @@ input{
 .schicken:hover{
     transform: scale(1.07);
 }
+.schicke{
+    text-align: center;
+}
+
 /* Anfang Style für den Footer*/
 footer{
     display: grid;
@@ -211,7 +216,7 @@ i{
     flex-direction: column;
     width: 60%;
     align-items: center;
-    margin-left: 50px;
+    margin-left: 17%;
 }
 .iListTage li{
     margin: 10px;
@@ -231,8 +236,12 @@ i{
 #add{
     margin-top: 0%;
 }
-#icon{
+.icon{
     color: #fff;
+}
+.lo img{
+    height: 25px;
+    width: 25px;
 }
 @media screen and (min-width:667px){
     .toggle{
@@ -309,73 +318,73 @@ i{
         height: 12cm;
         margin-left: 20px;
     }
-    /*Footer*/
-    footer{
-        width: 100%;
-        position: relative;
-        display: flex;
-        flex-flow: row wrap;
-        padding-top: 30px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        background-color: #b51fb8;
-    }
-    footer .foot{
-        position: static;
-        margin: 5%px;
-    }
-    footer .foot:nth-child(3){
-        display: flex;
-        flex-direction: column;
+     /*Footer*/
+  footer{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #b51fb8;
+}
+footer .foot{
+    position: static;
+    margin: 5%px;
+}
+footer .foot:nth-child(3){
+    display: flex;
+    flex-direction: column;
 
-    }
-    .foot .name{
-        position: relative;
-        top:50%;
-        margin-left: 30px;
-    }
-    footer .lo{
-        margin-top: 20px;
-    }
-    .iListTage{
-        display: grid;
-        flex-direction: column;
-        margin: 20px 40% 20px 0 ;
-        align-items: center;
-    }
-    #zeit{
-        position: relative;
-        bottom: 40px;
-        margin-right: 35px;
-    }
-    .foo1{
-        position: relative;
-        bottom: 40px;
-    }
-    .folge{
-        display: flex;
-        flex-direction: column;
-        margin-left: 9%;
-    }
-    .fooo{
-        margin-left: 10%;
-    }
-    .kontakt{
-        margin-left: 10%;
-    }
-    #addKont{
-        position: relative;
-        top: -30%;
-    }
-    .fo {
-        margin-left: 9%;
-    }
-    #add{
-        position: relative;
+}
+.foot .name{
+    position: relative;
+    top:50%;
+    margin-left: 30px;
+}
+footer .lo{
+    margin-top: 20px;
+}
+.iListTage{
+    display: grid;
+    flex-direction: column;
+    margin: 20px 40% 20px 0 ;
+    align-items: center;
+}
+#zeit{
+    position: relative;
+    bottom: 40px;
+    margin-right: 35px;
+}
+.foo1{
+    position: relative;
+    bottom: 40px;
+}
+.folge{
+    display: flex;
+    flex-direction: column;
+    margin-left: 9%;
+}
+.fooo{
+    margin-left: 10%;
+}
+.kontakt{
+    margin-left: 10%;
+}
+#addKont{
+    position: relative;
+    top: -30%;
+}
+.fo {
+    margin-left: 9%;
+}
+#add{
+    position: relative;
 
-    }
-    #copi{
-        padding-top: 50px;
-        margin-left: 9%;
+}
+#copi{
+    padding-top: 50px;
+    margin-left: 9%;
 
-    }
+}
 }
