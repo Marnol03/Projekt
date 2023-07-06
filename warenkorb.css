@@ -239,7 +239,9 @@ right: 20px;
 .form-section .card-number-section .card-type svg.error{
  display:none ;
 }
-
+.error{
+  fill: red;
+}
 .close{
   position: relative;
   top:1%;
@@ -323,6 +325,10 @@ right: 20px;
  .payment-btn .btn-icon{
   color: currentcolor;
   transition: all ease-in-out 200ms;
+
+}
+.btn-icon{
+  fill: rgba(0, 0, 0, 1);
 }
 
 .payment-btn:hover {
@@ -540,6 +546,10 @@ hr{
 .navi li{
   margin:-22px;
   padding: 20px;
+}
+svg{
+  height:24px;
+  width:24px;
 }
   .form-section{
     position: relative;

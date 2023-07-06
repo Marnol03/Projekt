@@ -99,7 +99,8 @@ header{
     height: 150px;
     animation: werb 20s infinite;
 }
-@keyframes werb{
+/*animation für die Werbung */
+ @keyframes werb{   
     0%{
         transform: translateX(0px);
     }
