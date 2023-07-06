@@ -38,10 +38,7 @@ function oncardInput(event){
         error.style.display='none'
         visa.style.display='block';
     }
-    // else if (isvalidcardNumber(event.target.value)) {
-    //     cardType.classList.add('is-kreditkarte')
-    //     cardType.setAttribute('title',"valid kartennummer")
-    // }
+  
 
 }
 
