@@ -150,6 +150,7 @@ header{
 
 #roue p{
     display: flex;
+   
 }
 #roue{
     display: flex;
@@ -167,8 +168,8 @@ header{
     display: flex;
 }
 #siege{
-    width: 5rem;
-    padding: 0px 20px;
+    width: 6rem;
+    padding: 0px 0px;
 }
 #kik2{
     display: none;
@@ -181,7 +182,7 @@ header{
 #parechoc{
     display:flex;
     width: 5rem;
-    padding: 0px 20px;
+    padding: 0px 0px;
 }
 .box img{
     cursor: pointer;
@@ -268,13 +269,11 @@ header{
 .option_item{
     display: grid;
     border: 5px solid transparent;
-    width: auto;
-    height: auto;
     margin: 0px 5px;
     padding: 0px;
 }
 
-.checkbox:checked ~ .option_inner{
+.checkbox:checked ~ .dick{
     border:5px solid rgb(229, 84, 104);  
 }
 .checkbox{
@@ -284,7 +283,8 @@ header{
 .dick{
     width: 200px;
     height: 200px; 
-    overflow: hidden;
+    justify-content: center;
+    align-items: center;
     margin:10px 20px;
     border: 2px solid rgb(7, 4, 4); 
     border-radius: 7px;
@@ -293,6 +293,7 @@ header{
 .bschreib{
     margin-left: 10px;
     margin-right: 10px;
+    position:relative;
     font-size: 18px;
 }
 .croix{
@@ -439,7 +440,7 @@ footer{
     display: grid;
     text-align: center;
     color: white;
-    background-color:#b51fb8;
+    background-color:#470b7f;
     width:100%;
     padding-top:15px;
     margin-bottom:0px;

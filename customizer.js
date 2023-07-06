@@ -274,16 +274,17 @@ document.addEventListener('DOMContentLoaded', function() {
     var imgs2 = document.getElementById('img3');
     var imgSrc2 = imgs2.getAttribute('src');
 
+    var style = window.getComputedStyle(imgElement1);
+    var colorValue = style.getPropertyValue('filter');
+
     localStorage.setItem('img1', imgSrc);
     localStorage.setItem('img2', imgSrc1);
     localStorage.setItem('img3', imgSrc2);
+    localStorage.setItem('color', colorValue);
 
     Beschreibung();
 
-
     window.location.href = 'warenkorb.html';
-     
-    
   });
 });
 
