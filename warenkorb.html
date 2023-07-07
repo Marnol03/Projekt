@@ -16,7 +16,7 @@
     <meta property="og:locale" content="de_DE">
     <meta property="og:image" content="link to 1.91:1 image - min 1200x630">
     <link rel="stylesheet" href="warenkorb.css">
-    <script type="module" src="warenkorb.js"></script>
+    <script type="module" src="warenkorb.js" defer ></script>
 </head>
 
 <body>
@@ -36,8 +36,8 @@
    
         </ul>
     </header>
-
-        <div class="auto" id="auto">
+                        <!-- plazt für das AUto -->
+        <div class="auto">
                 <div id="panier"></div>
                 <div id="beschreibung"></div>
                 <button class="bezahlen" id="bezahlen" type="submit"> bezahlen</button>
@@ -49,7 +49,8 @@
 
         <div class="backgroundfenster">
             <div class="bezahlenfenster">
-                <i class="fa-solid fa-circle-xmark close"></i>
+                <i class="fa-solid fa-circle-xmark close"></i> <!--close button
+                --> 
                 <h1 class="bezah">Bezahlung</h1>
                 <div class="bloc">
                    <input type="radio" name="methode" id="paypal" value="paypal" checked>
