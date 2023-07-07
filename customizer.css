@@ -222,10 +222,7 @@ header{
     width: 300px;
     height: 200px;
 }
- /* #img1{
-    margin-top:3%;
-    margin-left:1%; 
-}   */
+
 .d1{
     height: auto;
     display: grid;
@@ -679,10 +676,10 @@ i{
     }
     #photoContainer .img3{
         position: relative;
-        width: 70%;
-        height: 80px;
-        left: 20%;
-        top: 90px;  
+        width: 60%;
+        height: 90px;
+        left: 25%;
+        top: 70px;  
     }
     .d1{
         margin-top: 80px;

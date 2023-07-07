@@ -71,7 +71,12 @@ for (var i = 0; i < radioElements.length; i++) {
 
         imgElement.src = imageURL;
         if(imageURL==="http://127.0.0.1:5500/bild/test22.png"){
-          imgElement.style.margin='3% 0% 0% 1%';
+          if (window.innerWidth < 800){
+            imgElement.style.margin='3% 0% 0% 1%';
+          }
+          else{
+            imgElement.style.margin='1% 1% 0% 1%';
+          }
         }
         else{
           imgElement.style.margin='0%';
@@ -84,9 +89,15 @@ for (var i = 0; i < radioElements.length; i++) {
         imgElement.alt = 'Ausgewählte Reife';
     
         if(imageURL==="http://127.0.0.1:5500/bild/test22.png"){
-          imgElement.style.margin='3% 0% 0% 1%';
-
-          photoContainer.appendChild(imgElement);
+          if (window.innerWidth < 800){
+            imgElement.style.margin='3% 0% 0% 1%';
+            photoContainer.appendChild(imgElement);
+          }
+          else{
+            imgElement.style.margin='1% 1% 0% 1%';
+            photoContainer.appendChild(imgElement);
+          }
+          
         }
         else{
           photoContainer.appendChild(imgElement);
