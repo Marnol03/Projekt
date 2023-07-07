@@ -70,13 +70,29 @@ for (var i = 0; i < radioElements.length; i++) {
       if (imgElement) {
 
         imgElement.src = imageURL;
+        if(imageURL==="http://127.0.0.1:5500/bild/test22.png"){
+          imgElement.style.margin='3% 0% 0% 1%';
+        }
+        else{
+          imgElement.style.margin='0%';
+        }
       } else {
         imgElement = document.createElement('img'); /*Erstellung einer Element img fuer das erste bild */
         imgElement.className = 'img1';
         imgElement.src = imageURL;
         imgElement.id='img1';
-        imgElement.alt = 'Image sélectionnée';
-        photoContainer.appendChild(imgElement);
+        imgElement.alt = 'Ausgewählte Reife';
+    
+        if(imageURL==="http://127.0.0.1:5500/bild/test22.png"){
+          imgElement.style.margin='3% 0% 0% 1%';
+
+          photoContainer.appendChild(imgElement);
+        }
+        else{
+          photoContainer.appendChild(imgElement);
+        }
+        
+
       }
     }
   });
@@ -139,11 +155,11 @@ for (var i = 0; i < radioElements.length; i++) {
         if (imgElement2) {
 
           imgElement2.src = imageURL;
-          if (imgElement1.src.includes('foto1.png')) {
+          if (imgElement1.src.includes('test11.png')) {
             showAuto('auto1');
-          } else if (imgElement1.src.includes('foto2.png')) {
+          } else if (imgElement1.src.includes('test21.png')) {
             showAuto('auto2');
-          } else if (imgElement1.src.includes('foto3.png')) {
+          } else if (imgElement1.src.includes('test31.png')) {
             showAuto('auto3');
           }
         } else {
@@ -154,11 +170,11 @@ for (var i = 0; i < radioElements.length; i++) {
           imgElement2.alt = 'Image2 sélectionnée';
           photoContainer.appendChild(imgElement2);
           warenkorbbtn.style.display='block';
-          if (imgElement1.src.includes('foto1.png')) {  /*Beschreibung von Autos anzeigen nach der Auwahl von der dritte teil*/
+          if (imgElement1.src.includes('test11.png')) {  /*Beschreibung von Autos anzeigen nach der Auwahl von der dritte teil*/
             showAuto('auto1');
-          } else if (imgElement1.src.includes('foto2.png')) {
+          } else if (imgElement1.src.includes('test21.png')) {
             showAuto('auto2');
-          } else if (imgElement1.src.includes('foto3.png')) {
+          } else if (imgElement1.src.includes('test31.png')) {
             showAuto('auto3');
           }
         }
