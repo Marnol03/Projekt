@@ -1,10 +1,10 @@
 .okbild{
-height: 100vh;
- width: 100wh;
-display: grid;
-justify-content: center;
-align-items: center;
-background: linear-gradient(165deg, rgb(245, 241, 241), rgb(171, 143, 196));
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(165deg, rgb(245, 241, 241), rgb(171, 143, 196));
 }
 
 .okbild img{
@@ -27,8 +27,9 @@ background: linear-gradient(165deg, rgb(245, 241, 241), rgb(171, 143, 196));
 }
 
 .okbild span a{
+    position: relative;
     color: blueviolet;
-    margin-left: 85%;
+    margin-left: 70%;
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
@@ -44,4 +45,10 @@ background: linear-gradient(165deg, rgb(245, 241, 241), rgb(171, 143, 196));
     color: red;
     text-decoration: underline;
     font-weight: bold;
+}
+
+@media screen and (min-width:800px){
+    .okbild span a{
+        margin-left: 80%;
+    }
 }
