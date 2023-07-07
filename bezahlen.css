@@ -4,14 +4,23 @@ height: 100vh;
 display: grid;
 justify-content: center;
 align-items: center;
+background-color: violet;
 }
 
 .okbild img{
     height: 300px;
     width: 300px;
-  
+    box-shadow: 0 0 0 0 #000;
+    border-radius:100%;
+    animation: pulse 1.3s infinite;
 }
 
+  @keyframes pulse{
+    to{
+        box-shadow: 0 0 0 18px rgba(0, 0, 0, 0.01);
+    }
+  }
+  
 .okbild span{
     color:rgb(10, 6, 6);
     font-size: 25px;

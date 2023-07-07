@@ -117,7 +117,7 @@ header{   /*Style für den Header*/
     padding-left: 20px;
     border-radius: 7px;
 }
-  
+
 #panier img {
     width: 80%;
     height: 230px;
@@ -135,7 +135,7 @@ header{   /*Style für den Header*/
     margin-left: 10px;
     font-size: 13px;
   }
-  
+
 .new-price {
     margin-left: 10px;
     font-weight: bold;
@@ -146,6 +146,7 @@ header{   /*Style für den Header*/
     margin-left: 20px;
 
 }
+/* Anfang Warenkorb */
  .auto{
     padding: 10px;
     border-radius: 7px;
@@ -160,6 +161,11 @@ header{   /*Style für den Header*/
 }
 .leer{
   height: 25rem;
+  justify-content : center ;
+   display : grid;
+    align-items : center;
+    background-color : black;
+    color : white;
 }
 .leer p{
 
@@ -201,7 +207,7 @@ header{   /*Style für den Header*/
   font-size: 3rem;
   color: #000000;
 }
-
+/* formular für die zahlung mit der karte */
 .form-section{
   position: relative;
   font-size: 16px;
@@ -216,6 +222,11 @@ font-weight: 10px;
 height: 2.8rem;
 left: 4%
 }
+
+/*diese Anweisung wird verwendet, um gezielt
+ direkte Kindelemente anzusprechen, die einen
+  Klassennamen haben, der das Schlüsselwort 
+  ,,-section'' enthält*/
 
 .form-section > [class *='-section'],
 .form-section .input-row{
@@ -306,7 +317,7 @@ left: 4%
  background-color: transparent;
 
 }
-
+ /* wenn die Karte ungültig ist */
 .form-section .input input.invalid{
   border-color: red;
 }
@@ -349,20 +360,7 @@ left: 4%
   padding-left: 1.5rem;
 }
 
-.karte-section{
-  width: 42%;
-  height: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.karte-section img {
-  height: 85px;
-  width: 85px;
-}
-
+/*nur nach dem Klick auf den bezahlen-Button  */
 
 .backgroundfenster {
   display:none;
@@ -374,6 +372,7 @@ left: 4%
   background: linear-gradient(300deg, #e89ee9, #b51fb8);
 }
 
+/* Zum Anzeigen des backgroundfenster*/
 .active {
   display: flex !important;
 }
@@ -389,6 +388,8 @@ left: 4%
   overflow: scroll;
   margin: 10%;
 }
+
+/* button bezahlen*/
 .bezahlen {
   position: relative;
   height: 30px;
@@ -430,7 +431,7 @@ footer{
   font-size: 20px;
 }
 /*Style für den Teil Service*/
-.tit{ 
+.tit{
   margin-bottom: 10%;
 }
 .fooo{
@@ -485,7 +486,7 @@ i{
   font-size: 1rem;
 }
 /*Style für den Teil Folge Uns*/
-.foot .iLink-icone{  
+.foot .iLink-icone{
   align-items: center;
   padding: 5px;
   margin:0px 3px;
