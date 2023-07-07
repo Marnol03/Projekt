@@ -4,7 +4,7 @@ height: 100vh;
 display: grid;
 justify-content: center;
 align-items: center;
-background-color: violet;
+background: linear-gradient(165deg, rgb(245, 241, 241), rgb(171, 143, 196));
 }
 
 .okbild img{
@@ -28,12 +28,16 @@ background-color: violet;
 
 .okbild span a{
     color: blueviolet;
-    position: relative;
-    left: 75%;
-    bottom: 30px;
+    margin-left: 85%;
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
+    border-radius: 9px;
+    border: 2px solid transparent;
+    margin-bottom: 12%;
+    padding: 9px;
+    background: linear-gradient(165deg, rgb(222, 238, 222), rgb(141, 141, 150));
+    color: white;
 }
 
 .okbild span a:hover{
