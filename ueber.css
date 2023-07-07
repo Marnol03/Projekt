@@ -19,7 +19,7 @@ header{   /*Style für den Header*/
     justify-content: space-between;
     top:0;
     color:rgb(240, 233, 233);
-    background-color: #b51fb8;
+    background-color: #470b7f;
 }
 /*Anfang Style für den Toggle*/
 .toggle{
@@ -47,7 +47,7 @@ header{   /*Style für den Header*/
 
 /*Anfang Style für die Navigationsliste*/
 .navi{
-    background-color: #b51fb8;
+    background-color: #470b7f;
     position: fixed;
     height: 100%;
     width: 100%;
@@ -79,8 +79,6 @@ header{   /*Style für den Header*/
 .car{       /*Style Logo fürs Logo*/
     font-size: 44px;
     color:#fff;
-    font-size: 44px;
-    color:#fff;
 }
 .name span{
     color: #fff;
@@ -101,7 +99,7 @@ p{
 .container{
     position: relative;
     border-radius: 10px;
-    border: 5px solid #b51fb8;
+    border: 5px solid #8c3ad9;
     margin: 0 10px;
     bottom: 10px;
 }
@@ -113,7 +111,7 @@ footer{
     display: grid;
     text-align: center;
     color: white;
-    background-color:#b51fb8;
+    background-color: #470b7f;
     width:100%;
     padding-top:15px;
     margin-bottom:0px;
@@ -162,7 +160,7 @@ footer{
 }
 
 i{
-    color: #000000;
+    color: white;
 }
 
 /*Style für den Teil Arbeitstage*/
@@ -172,7 +170,7 @@ i{
     flex-direction: column;
     width: 60%;
     align-items: center;
-    margin-left: 50px;
+    margin-left: 17%;
 }
 .iListTage li{
     margin: 10px;
@@ -201,7 +199,7 @@ i{
 }
 
 /*Responsive Style*/
-@media screen and (min-width:667px ){
+@media screen and (min-width:800px){
     .toggle{
         display: none;
     }
@@ -238,14 +236,14 @@ i{
         padding: 10px 20px;
     }
     .car{
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .name{
         font-size: 30px;
         margin-top: -2%;
     }
     .name span{
-        font-size: 5rem;
+        font-size: 4rem;
     }
     header{
         padding-bottom: 0px;
@@ -262,7 +260,6 @@ i{
         display: flex;
         flex-flow: row wrap;
         padding-top: 30px;
-        background-color:#b51fb8;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     footer .foot{

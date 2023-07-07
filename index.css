@@ -19,7 +19,7 @@ header{   /*Style für den Header*/
     justify-content: space-between;
     top:0;
     color:rgb(240, 233, 233);
-    background-color: #b51fb8;
+    background-color: #470b7f;
 }
 /*Anfang Style für den Toggle*/
 .toggle{
@@ -47,7 +47,7 @@ header{   /*Style für den Header*/
 
 /*Anfang Style für die Navigationsliste*/
 .navi{
-    background-color: #b51fb8;
+    background-color: #470b7f;
     position: fixed;
     height: 100%;
     width: 100%;
@@ -77,8 +77,6 @@ header{   /*Style für den Header*/
     background-color:#c03b79;
 }
 .car{       /*Style Logo fürs Logo*/
-    font-size: 44px;
-    color:#fff;
     font-size: 44px;
     color:#fff;
 }
@@ -214,7 +212,7 @@ h4{
     background-color: white;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 10px 35px rgb(255, 0, 238);
+    box-shadow: 0 10px 35px #470b7f;
 }
 .iformSign{
     display: grid;
@@ -223,7 +221,7 @@ h4{
     display: grid;
 }
 .iterms a, .imember a, .recover a{
-    color: rgb(242, 143, 245);
+    color: #64378f;
     font-size: 1rem;
     text-decoration: none;
     position: relative;
@@ -258,7 +256,7 @@ form input{
     width: 80%;
     color: #fff;
     cursor: pointer;
-    background-color: rgb(255, 0, 238);
+    background: linear-gradient(130deg, rgb(201, 66, 163), #7c0ee3);
 }
 #but, #buttonSign{
     margin-left: 50px;
@@ -310,7 +308,7 @@ footer{
     display: grid;
     text-align: center;
     color: white;
-    background-color:#b51fb8;
+    background-color: #470b7f;
     width:100%;
     padding-top:15px;
     margin-bottom:0px;
@@ -359,7 +357,7 @@ footer{
 }
 
 i{
-    color: #000000;
+    color: white;
 }
 
 /*Style für den Teil Arbeitstage*/
@@ -395,7 +393,7 @@ i{
 }
 
 /*Responsive Style*/
-@media screen and (min-width:667px ){
+@media screen and (min-width:800px ){
     .toggle{
         display: none;
     }
@@ -432,14 +430,14 @@ i{
         padding: 10px 20px;
     }
     .car{
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .name{
         font-size: 30px;
         margin-top: -2%;
     }
     .name span{
-        font-size: 5rem;
+        font-size: 4rem;
     }
     header{
         padding-bottom: 0px;
@@ -497,7 +495,6 @@ i{
         background-color: white;
         border-radius: 10px;
         text-align: center;
-        box-shadow: 0 10px 35px rgb(255, 0, 238);
         position:relative;
     }
     .button{
@@ -510,7 +507,6 @@ i{
         width: 80%;
         color: #fff;
         cursor: pointer;
-        background-color: rgb(255, 0, 238);
     }
     .ibtn::before{
         width: 150px;
@@ -523,7 +519,6 @@ i{
         display: grid;
     }
     .iterms a, .imember a, .recover a{
-        color: rgb(242, 143, 245);
         font-size: 1rem;
         text-decoration: none;
         position: relative;
@@ -549,7 +544,6 @@ i{
         flex-flow: row wrap;
         padding-top: 30px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        background-color: #b51fb8;
     }
     footer .foot{
         position: static;
