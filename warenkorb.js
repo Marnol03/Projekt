@@ -4,6 +4,52 @@ let body = document.querySelector("body")
 toggle.addEventListener('click',function(){
     body.classList.toggle('open')
 })
+var warenkorb = document.getElementById("auto");
+var altwarenkorb = document.getElementById("leer");
+
+document.addEventListener('DOMContentLoaded', function() {
+    var panier = document.getElementById('panier');
+
+    if (localStorage.getItem('img1') && localStorage.getItem('img2') && localStorage.getItem('img3')) {
+       
+        warenkorb.style.display='block';
+        altwarenkorb.style.display='none';
+       
+        var bSrc = localStorage.getItem('img1');
+       var bSrc1 = localStorage.getItem('img2');
+      var bSrc2 = localStorage.getItem('img3');
+      var colorValue = localStorage.getItem('color');
+         
+       var img1 = document.createElement('img');
+       img1.src = bSrc;
+       var img2 = document.createElement('img');
+       img2.src = bSrc1;
+       img2.style.filter=colorValue;
+       var img3 = document.createElement('img');
+       img3.src = bSrc2;
+       img3.className='img3';
+
+       panier.appendChild(img1);
+       panier.appendChild(img2);
+       panier.appendChild(img3);
+
+       const beschreibung = localStorage.getItem('beschreib');
+
+       if (beschreibung) {
+            const Beschreibung = document.getElementById('beschreibung');
+            Beschreibung.innerHTML = beschreibung;
+        }
+
+       localStorage.removeItem('img1');
+       localStorage.removeItem('img2');
+       localStorage.removeItem('img3');
+       localStorage.removeItem('beschreib');
+       localStorage.removeItem('colorValue');
+    }
+});
+
+
+
 // Verifizierung der Kartenummer
 //--------------------------------------------------
 
@@ -13,6 +59,8 @@ let cardType = document.getElementById('cardType')
 //Wir hören dem Klick auf das Eingabefeld für die Kartennummer zu
 kartenummerinput.addEventListener('input',oncardInput)
 kartenummerinput.addEventListener('change',oncardNumberChange)
+
+kartenummerinput.addEventListener('input', oncardNumberChange);
 
 function oncardInput(event){
     //Validierungsregex für eine Visa- und Maestro-Karte
@@ -132,48 +180,14 @@ function bezahlenFensterVerwalten() {
         }
     })
 }
-
 bezahlenFensterVerwalten()
 
-var panier = document.getElementById('panier');
- panier.addEventListener('click', ()=>{
-    panier.style.backgroundColor='red';
- });
- var bezahlen = document.getElementById('bezahlen');
- bezahlen.addEventListener('click', ()=>{
-    panier.style.backgroundColor='red'; 
+const end=document.getElementById('end');
+const end1=document.getElementById('end1');
+
+end.addEventListener('click', ()=>{
+    window.location.href='bezahlen.html';
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var panier = document.getElementById('panier');
-
-    if (localStorage.getItem('img1') && localStorage.getItem('img2') && localStorage.getItem('img3')) {
-       var bSrc = localStorage.getItem('img1');
-       var bSrc1 = localStorage.getItem('img2');
-      var bSrc2 = localStorage.getItem('img3');
-         
-       var img1 = document.createElement('img');
-       img1.src = bSrc;
-       var img2 = document.createElement('img');
-       img2.src = bSrc1;
-       var img3 = document.createElement('img');
-       img3.src = bSrc2;
-
-       panier.appendChild(img1);
-       panier.appendChild(img2);
-       panier.appendChild(img3);
-
-       const beschreibung = localStorage.getItem('beschreib');
-
-       if (beschreibung) {
-            const Beschreibung = document.getElementById('beschreibung');
-            Beschreibung.innerHTML = beschreibung;
-        }
-
-       localStorage.removeItem('img1');
-       localStorage.removeItem('img2');
-       localStorage.removeItem('img3');
-       localStorage.removeItem('beschreib');
-    }
+end1.addEventListener('click', ()=>{
+    window.location.href='bezahlen.html';
 });
-

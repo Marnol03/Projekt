@@ -127,7 +127,7 @@ header{   /*Style für den Header*/
     width: 35%;
     height: 20%;
     left:31%;
-    top:28%
+    top:25%
 }
 .old-price {
     text-decoration:line-through;
@@ -150,12 +150,27 @@ header{   /*Style für den Header*/
     padding: 10px;
     border-radius: 7px;
     height: auto;
+    display:none;
 
 }
 
 .auto img{
   height: 40vh;
   width: 100vw;
+}
+.leer{
+  height: 25rem;
+}
+.leer p{
+
+  font-size: 20px;
+}
+.leer p a{
+  color: #1017e1;
+  text-decoration: underline;
+}
+.leer p a:hover{
+  color: green;
 }
 
 .bloc img{
@@ -226,11 +241,10 @@ left: 4%
 }
 
 .form-section .card-number-section .card-type svg{
-   position: relative;
+  position: relative;
   width: 2em;
   height: 2em;
-  
-right: 20px;
+  right: -36px;
 }
 
 .form-section .card-number-section .card-type svg.visa,
@@ -325,11 +339,9 @@ right: 20px;
  .payment-btn .btn-icon{
   color: currentcolor;
   transition: all ease-in-out 200ms;
-
-}
-.btn-icon{
   fill: rgba(0, 0, 0, 1);
 }
+
 
 .payment-btn:hover {
   color: white;
