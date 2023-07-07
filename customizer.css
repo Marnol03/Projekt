@@ -223,8 +223,9 @@ header{
     height: 200px;
 }
 #img1{
-    left:15%;
-}
+    /* margin-top:3%;
+    margin-left:1%;  */
+} 
 .d1{
     height: auto;
     display: grid;
@@ -333,7 +334,7 @@ header{
     flex-direction: column;
     align-items: center;
     height:auto;
-    background-color: rgb(72, 82, 110);
+    background-color: rgb(25, 29, 40);
     margin: 5px 10px;
     border-radius: 6px;
 }
