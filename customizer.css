@@ -357,7 +357,7 @@ header{
     border:none;
     color: white;
     font-size: 20px;
-    background-color: #3E3BC0;
+    background-color: #470b7f;
     border-radius: 10px;
     padding: 10px 20px;
     display:none; 
@@ -505,7 +505,7 @@ i{
     flex-direction: column;
     width: 60%;
     align-items: center;
-    margin-left: 50px;
+    margin-left: 17%;
 }
 .iListTage li{
     margin: 10px;
@@ -555,7 +555,7 @@ i{
         margin: -20px;
         margin-right: -60px;
         color: white;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         border-radius: 5px;
     }
     .nav a:hover{
@@ -578,21 +578,21 @@ i{
         display: flex;
         padding-bottom: 0px;
         margin-bottom: -30px;
-        background-color:#bf13d2;
+        background-color:#470b7f;
         z-index: 1;
         height: 6em;
     }
     .name{
         color: rgb(248, 245, 245);
         font-size: 30px;
-        margin-top: -2.5%;
+        margin-top: -1.9%;
     }
     .name span{
         color: white;
-        font-size: 3em;
+        font-size: 1.9em;
     }
     .car{
-        font-size: 4rem;
+        font-size: 2.6rem;
     }
     hr{
        border: transparent;
@@ -715,7 +715,7 @@ i{
         flex-flow: row wrap;
         padding-top: 30px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        background-color: #bf13d2;
+        background-color: #470b7f;
     }
     footer .foot{
         position: static;

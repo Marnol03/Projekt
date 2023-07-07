@@ -60,7 +60,7 @@ var photoContainer = document.getElementById('photoContainer');
 var coch = document.getElementById('kik1');
 var imgElement = document.querySelector('.img1');
 
-/*Bilder auswählen und zum Fotocontainer hinzufügen */
+/*Karosserie auswählen und zum Fotocontainer hinzufügen */
 for (var i = 0; i < radioElements.length; i++) {
   radioElements[i].addEventListener('change', function() {
     
@@ -89,14 +89,8 @@ for (var i = 0; i < radioElements.length; i++) {
         imgElement.alt = 'Ausgewählte Reife';
     
         if(imageURL==="http://127.0.0.1:5500/bild/test22.png"){
-          if (window.innerWidth < 800){
-            imgElement.style.margin='3% 0% 0% 1%';
-            photoContainer.appendChild(imgElement);
-          }
-          else{
-            imgElement.style.margin='1% 1% 0% 1%';
-            photoContainer.appendChild(imgElement);
-          }
+          imgElement.style.margin='1% 1% 0% 1%';
+          photoContainer.appendChild(imgElement);
           
         }
         else{
@@ -113,6 +107,7 @@ var coch1 = document.getElementById('kik');
 var imgElement1 = document.querySelector('.img2');
 var photoContainer = document.getElementById('photoContainer');
 
+/*Reife auswählen und zum Fotocontainer hinzufügen */
 for (var i = 0; i < radioElements.length; i++) {
   radioElements[i].addEventListener('change', function() {
 
@@ -155,6 +150,7 @@ var radioElements = document.getElementsByName('check2');
 var coch2 = document.getElementById('kik2');
 var imgElement2 = document.querySelector('.img3');
 
+/*Design auswählen und zum Fotocontainer hinzufügen */
 for (var i = 0; i < radioElements.length; i++) {
   radioElements[i].addEventListener('change', function() {
 
