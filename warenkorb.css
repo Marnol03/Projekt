@@ -17,7 +17,7 @@ header{   /*Style für den Header*/
   justify-content: space-between;
   top:0;
   color:rgb(240, 233, 233);
-  background-color: #b51fb8;
+  background-color: #470b7f;
 }
 /*Anfang Style für den Toggle*/
 .toggle{
@@ -45,7 +45,7 @@ header{   /*Style für den Header*/
 
 /*Anfang Style für die Navigationsliste*/
 .navi{
-  background-color: #b51fb8;
+  background-color: #470b7f;
   position: fixed;
   height: 100%;
   width: 100%;
@@ -72,11 +72,15 @@ header{   /*Style für den Header*/
   transform: translatex(20px);
 }
 .open .navi a:hover{
-  background-color:#c03b79;
+  background-color:#38296d;
+}
+.navi i{
+  color: white;
+}
+.toggle i{
+  color: white;
 }
 .car{       /*Style Logo fürs Logo*/
-  font-size: 44px;
-  color:#fff;
   font-size: 44px;
   color:#fff;
 }
@@ -96,7 +100,7 @@ header{   /*Style für den Header*/
 }
 
 .bezahlen {
-    position: relative;
+
     background-color: rgb(11, 11, 112);
     color: aliceblue;
     bottom: 0px;
@@ -105,17 +109,14 @@ header{   /*Style für den Header*/
     text-align: center;
 }
 
-#panier{
-    height: 150px;
-    width: 80%;
-    background: linear-gradient(167deg, rgb(87, 81, 81), rgb(20, 19, 20));
-}
 #panier {
     width: 80%;
     height: 250px;
     object-fit: contain;
     padding-left: 20px;
     border-radius: 7px;
+    width: 80%;
+    background: linear-gradient(167deg, rgb(87, 81, 81), rgb(20, 19, 20));
 }
 
 #panier img {
@@ -124,10 +125,11 @@ header{   /*Style für den Header*/
     position:absolute;
 }
 #panier img:nth-child(3){
-    width: 35%;
-    height: 20%;
-    left:31%;
-    top:25%
+    width: 40%;
+    height: 40%;
+    left:30%;
+    top:32%;
+    position: relative;
 }
 .old-price {
     text-decoration:line-through;
@@ -164,8 +166,8 @@ header{   /*Style für den Header*/
   justify-content : center ;
    display : grid;
     align-items : center;
-    background-color : black;
-    color : white;
+    background-color : rgb(250, 246, 246);
+    color : rgb(10, 9, 9);
 }
 .leer p{
 
@@ -369,7 +371,7 @@ left: 4%
   height: 100%;
   bottom: 1px;
   z-index : 30;
-  background: linear-gradient(300deg, #e89ee9, #b51fb8);
+  background: linear-gradient(300deg, #533272, #470b7f);
 }
 
 /* Zum Anzeigen des backgroundfenster*/
@@ -406,7 +408,7 @@ left: 4%
 }
 .bezah{
   text-align: center;
-  color: #b51fb8;
+  color: #7829c2;
   font-size: 3rem;
 }
 
@@ -415,7 +417,7 @@ footer{
   display: grid;
   text-align: center;
   color: white;
-  background-color:#b51fb8;
+  background-color:#470b7f;
   width:100%;
   padding-top:15px;
   margin-bottom:0px;
@@ -474,7 +476,7 @@ i{
   flex-direction: column;
   width: 60%;
   align-items: center;
-  margin-left: 50px;
+  margin-left: 17%;
 }
 .iListTage li{
   margin: 10px;
@@ -506,16 +508,16 @@ i{
   .toggle{
     display: none;
   }
-.navi{
-    transform: translateX(0);
-    background-color: transparent;
-    position: relative;
-    display: flex;
-    flex-direction:row;
-    transition: transform 0s;
-    width: auto;
-    margin: 10px 0px 0px 0px;
-}
+  .navi{
+      transform: translateX(0);
+      background-color: transparent;
+      position: relative;
+      display: flex;
+      flex-direction:row;
+      transition: transform 0s;
+      width: auto;
+      margin: 10px 0px 0px 0px;
+  }
 .navi a{
     display: flex;
     justify-content: space-between;
@@ -527,7 +529,7 @@ i{
     font-size: 1.5rem;
 }
 .navi a:hover{
-    background-color: #79e110;
+    background-color: #332582;
     color: white;
 }
 .navi a i{
@@ -560,6 +562,31 @@ hr{
   margin:-22px;
   padding: 20px;
 }
+#panier{
+  height: 150px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#panier {
+  width: 60%;
+  height: 250px;
+  object-fit: contain;
+  padding-left: 20px;
+  border-radius: 7px;
+  margin-left:10%;
+} 
+#panier img:nth-child(3){
+  width: 30%;
+  height: 40%;
+  left:0px;
+  top:0px;
+}
+#beschreibung{
+  font-size: 25px;
+  margin-left: 7%;
+}
 svg{
   height:24px;
   width:24px;
@@ -581,7 +608,7 @@ svg{
     flex-flow: row wrap;
     padding-top: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #b51fb8;
+    background-color: #470b7f;
 }
 footer .foot{
     position: static;
@@ -645,24 +672,6 @@ footer .lo{
 }
 
 @media screen and (min-width: 800px){
-  #auto{
-    align-items: center;
-  }
-   #panier{
-    margin-left: 10%;
-    width: 660px;
-  }
-  #panier img {
-    width: 530px;
-    height: 230px;
-    position: absolute;
-  }
-  /*#panier img:nth-child(3){
-    width: 250px;
-    height: 150px;
-    left:33%;
-    top:15%
-  } */
   .bezahlenfenster{
    width: 647px;
   }
@@ -671,5 +680,14 @@ footer .lo{
     justify-content: center;
 
   }
+  #panier{
+    width: 65%;
+    height: 300px;
+    object-fit: contain;
+    padding-left: 20px;
+    margin-left: 10%;
+  }
+  #panier img{
+    width: auto;
+  }
 }
-
